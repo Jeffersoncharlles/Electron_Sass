@@ -59,3 +59,24 @@
 
         .wishlist-container , .header-cart-container
             @include layouts-mixins.header-icon
+
+.header-bottom
+    background-color: variables.$bg-color
+    border-bottom: 2px solid variables.$secondary-bg-color
+    border-top: 3px solid variables.$secondary-bg-color
+
+    ul
+        @include layouts-mixins.center-content
+        justify-content: left
+        padding: 1rem 0
+
+        li 
+            margin-right: 1.3rem
+
+            a
+                color: variables.$light-color
+                border-bottom: 2px solid transparent
+
+                &:hover
+                    color: variables.$primary-color
+                    border-color: variables.$primary-color

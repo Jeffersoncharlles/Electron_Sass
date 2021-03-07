@@ -119,10 +119,43 @@ ul {
   color: #32e0c4;
 }
 
+.header-bottom {
+  background-color: #eb5e0b;
+  border-bottom: 2px solid #fb743e;
+  border-top: 3px solid #fb743e;
+}
+.header-bottom ul {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  padding: 1rem 0;
+}
+.header-bottom ul li {
+  margin-right: 1.3rem;
+}
+.header-bottom ul li a {
+  color: #eeeeee;
+  border-bottom: 2px solid transparent;
+}
+.header-bottom ul li a:hover {
+  color: #32e0c4;
+  border-color: #32e0c4;
+}
+
+.banners {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
 .btn {
   padding: 8px 15px;
   height: 40px;
-  color: #212121;
+  color: #eb5e0b;
   border-radius: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -133,13 +166,69 @@ ul {
   transition: 0.4s;
 }
 .btn:hover {
-  background-color: #eeeeee;
-  color: #212121;
+  background-color: #00917c;
+  color: #eeeeee;
+  border: 1px solid;
 }
 .btn-half {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   text-transform: none;
+}
+
+.banner {
+  width: 30%;
+  height: 200px;
+  position: relative;
+  color: #eeeeee;
+  transition: 0.4s;
+  background-position: center;
+  background-size: cover;
+  background-size: 100%;
+}
+.banner:hover {
+  background-size: 120%;
+}
+.banner-cover {
+  background-color: #32e0c4;
+  width: 70%;
+  height: 100%;
+  opacity: 0.8;
+  border-bottom-right-radius: 6rem;
+}
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}
+.banner-content h2 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  max-width: 70%;
+}
+.banner-content a {
+  font-size: 1.5rem;
+  color: #eeeeee;
+  font-weight: bolt;
+  display: flex;
+  align-items: center;
+}
+.banner-content i {
+  color: #eeeeee;
+  margin-left: 1.8rem;
+}
+
+#banner-1 {
+  background-image: url("../img/banner-1.jpg");
+}
+
+#banner-2 {
+  background-image: url("../img/banner-2.jpg");
+}
+
+#banner-3 {
+  background-image: url("../img/banner-3.jpg");
 }
 
 /*# sourceMappingURL=app.css.map */
